@@ -1,0 +1,472 @@
+---
+import Layout from './Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<Layout title={title}>
+  <Navbar />
+
+  <main>
+    <section class="hero">
+      <h1>AI Agents for Customer Support Excellence</h1>
+      <div class="animated-underline"></div>
+      <p class="subtitle">Built for Speed, Scale, and Quality</p>
+      <p class="description">Hdgebot handles complex queries, boosts efficiency, and streamlines support, empowering your business to scale faster with precision and accuracy.</p>
+      <a href="#getstarted" class="cta-button hero-cta">Get in Touch</a>
+      <div class="hero-background">
+        <div class="dots-grid"></div>
+        <div class="gradient-overlay"></div>
+      </div>
+    </section>
+
+    <section id="social-proof" class="section">
+      <h2>Trusted by Leading Businesses</h2>
+      <p class="stats">Powering over 1 million interactions monthly with 99.95% uptime</p>
+    </section>
+
+    <section id="features" class="section">
+      <h2>The Ultimate AI Toolkit for Customer Service</h2>
+      <div class="animated-underline"></div>
+      <p class="section-subtitle">From intelligent chatbots to powerful co-pilots, Hdgebot unlocks endless possibilities to transform your customer service.</p>
+      
+      <div class="feature-badges">
+        <div class="badge">
+          <span class="icon">⚡</span>
+          No-Code Platform
+        </div>
+        <div class="badge">
+          <span class="icon">💰</span>
+          Cost-Effective Solutions
+        </div>
+        <div class="badge">
+          <span class="icon">📊</span>
+          Powerful Analytics & Insights
+        </div>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="icon">💬</div>
+          <h3>Intelligent Chatbots</h3>
+          <p>Handle complex user queries with accurate responses, integrating seamlessly with your existing data sources and SOPs.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🔍</div>
+          <h3>Image Recognition & Analysis</h3>
+          <p>Enhance support by automatically classifying and analyzing images for faster issue resolution.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">✅</div>
+          <h3>Automated SOP Adherence</h3>
+          <p>Ensure complete oversight and consistency by automating quality checks across all interactions.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🎙️</div>
+          <h3>Voice AI Agents</h3>
+          <p>Deploy cost-effective voice AI agents that interact naturally with users in multiple languages.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📈</div>
+          <h3>AI-Powered Analytics</h3>
+          <p>Gain valuable insights from interaction data to optimize performance and identify trends.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🤝</div>
+          <h3>Agent Co-pilot</h3>
+          <p>Empower your team with real-time assistance, smart suggestions, and contextual actions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="integrations" class="section">
+      <h2>Seamless Integrations</h2>
+      <div class="animated-underline"></div>
+      <p class="section-subtitle">Hdgebot integrates effortlessly with your existing tools</p>
+      
+      <div class="integration-logos">
+        <div class="logo-item" role="img" aria-label="Freshdesk Integration">
+          <img src="https://cdn.worldvectorlogo.com/logos/freshdesk.svg" alt="Freshdesk logo" loading="lazy" />
+        </div>
+        <div class="logo-item" role="img" aria-label="Zoho Integration">
+          <img src="https://cdn.worldvectorlogo.com/logos/zoho-2.svg" alt="Zoho logo" loading="lazy" />
+        </div>
+        <div class="logo-item" role="img" aria-label="Salesforce Integration">
+          <img src="https://cdn.worldvectorlogo.com/logos/salesforce-2.svg" alt="Salesforce logo" loading="lazy" />
+        </div>
+        <div class="logo-item" role="img" aria-label="Slack Integration">
+          <img src="https://cdn.worldvectorlogo.com/logos/slack-new-logo.svg" alt="Slack logo" loading="lazy" />
+        </div>
+        <div class="logo-item" role="img" aria-label="WhatsApp Integration">
+          <img src="https://cdn.worldvectorlogo.com/logos/whatsapp-business.svg" alt="WhatsApp logo" loading="lazy" />
+        </div>
+        <div class="logo-item" role="img" aria-label="Zendesk Integration">
+          <img src="https://cdn.worldvectorlogo.com/logos/zendesk-1.svg" alt="Zendesk logo" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits" class="section dark-section">
+      <h2>Drive Measurable Results with Hdgebot</h2>
+      <div class="animated-underline"></div>
+      <div class="metrics-grid">
+        <div class="metric-card" data-aos="fade-up">
+          <div class="icon">⚡</div>
+          <h3>75% Increase</h3>
+          <p>in First Contact Resolution</p>
+        </div>
+        <div class="metric-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon">⏱️</div>
+          <h3>30% Reduction</h3>
+          <p>in Average Handling Time</p>
+        </div>
+        <div class="metric-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon">😊</div>
+          <h3>20% Improvement</h3>
+          <p>in Customer Satisfaction</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta" class="section dark-section">
+      <div class="cta-container" data-aos="fade-up">
+        <h2>Ready to Experience the Power of Hdgebot?</h2>
+        <p class="section-subtitle">Get started today and see how Hdgebot can revolutionize your customer service – faster, smarter, and more efficiently.</p>
+        <a href="#getstarted" class="cta-button">Get in Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  :root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --text-primary: #111827;
+    --text-secondary: #4b5563;
+    --accent-color: #6d28d9;
+    --grid-line-color: rgba(0, 0, 0, 0.1);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg-primary: #0a0a0f;
+      --bg-secondary: #12121a;
+      --text-primary: #ffffff;
+      --text-secondary: #a0a0b0;
+      --grid-line-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  * {
+    font-family: 'Inter', sans-serif;
+  }
+
+  main {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button {
+    background: linear-gradient(45deg, var(--accent-color), #9333ea);
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    color: white !important;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(109, 40, 217, 0.2);
+  }
+
+  .hero {
+    position: relative;
+    text-align: center;
+    padding: 12rem 2rem 8rem;
+    overflow: hidden;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-wrap: balance;
+    line-height: 1.2;
+  }
+
+  .animated-underline {
+    width: 200px;
+    height: 4px;
+    background: var(--accent-color);
+    margin: 1rem auto;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .animated-underline::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    animation: shine 2s infinite;
+  }
+
+  @keyframes shine {
+    to {
+      left: 100%;
+    }
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+  }
+
+  .description {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  .dots-grid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(var(--grid-line-color) 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.5;
+  }
+
+  .gradient-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, transparent 20%, var(--bg-primary) 70%);
+  }
+
+  .section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-wrap: balance;
+  }
+
+  .section-subtitle {
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+  }
+
+  .feature-badges {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    background: var(--bg-secondary);
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .feature-card {
+    background: var(--bg-secondary);
+    border-radius: 18px;
+    padding: 32px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+  }
+
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .feature-card .icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .feature-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  .dark-section {
+    background: linear-gradient(135deg, rgba(30, 30, 45, 0.95), rgba(90, 40, 140, 0.95));
+    border-radius: 18px;
+    margin: 32px auto;
+    padding: 64px 32px;
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .integration-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin: 3rem auto;
+    max-width: 900px;
+  }
+
+  .logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: var(--bg-primary);
+    border-radius: 18px;
+    transition: transform 0.3s ease;
+  }
+
+  .logo-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .logo-item img {
+    max-width: 120px;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+  }
+
+  .logo-item:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .metric-card {
+    background: var(--bg-primary);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .metric-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .metric-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .metric-card h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(45deg, var(--accent-color), #9333ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+
+  @media (max-width: 768px) {
+    .nav-links a:not(.cta-button) {
+      display: none;
+    }
+
+    .hero {
+      padding: 8rem 1rem 4rem;
+    }
+
+    .feature-badges {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .badge {
+      width: 100%;
+      max-width: 300px;
+      justify-content: center;
+    }
+
+    .integration-logos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+      flex-direction: column;
+      gap: 1.5rem;
+      text-align: center;
+    }
+
+    .footer-links {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+</style>

@@ -1,0 +1,83 @@
+<nav class="navbar">
+  <div class="nav-content">
+    <div class="logo">Hdgebot</div>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#getstarted" class="cta-button">Get in Touch</a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid var(--grid-line-color);
+    z-index: 1000;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .navbar {
+      background: rgba(10, 10, 15, 0.8);
+    }
+  }
+
+  .nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, var(--accent-color), #9333ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: var(--text-primary);
+  }
+
+  .cta-button {
+    background: linear-gradient(45deg, var(--accent-color), #9333ea);
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    color: white !important;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(109, 40, 217, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .nav-links a:not(.cta-button) {
+      display: none;
+    }
+  }
+</style>
